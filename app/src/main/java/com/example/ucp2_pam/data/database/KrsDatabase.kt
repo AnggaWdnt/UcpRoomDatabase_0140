@@ -4,6 +4,7 @@ import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
+import com.example.ucp2_pam.data.dao.DosenDao
 import com.example.ucp2_pam.data.dao.MatakuliahDao
 import com.example.ucp2_pam.data.entity.Dosen
 import com.example.ucp2_pam.data.entity.Matakuliah
@@ -11,6 +12,7 @@ import com.example.ucp2_pam.data.entity.Matakuliah
 @Database(entities = [Dosen::class, Matakuliah::class], version = 1, exportSchema = false)
 abstract class KrsDatabase : RoomDatabase(){
     abstract fun  matakuliahdao(): MatakuliahDao
+    abstract fun  dosendao(): DosenDao
 
     companion object{
         @Volatile
