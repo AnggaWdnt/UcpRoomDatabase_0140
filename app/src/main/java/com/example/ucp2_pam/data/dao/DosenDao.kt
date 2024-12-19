@@ -3,6 +3,8 @@ package com.example.ucp2_pam.data.dao
 import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.Query
+import com.example.ucp2_pam.data.entity.Dosen
+import kotlinx.coroutines.flow.Flow
 
 @Dao
 interface DosenDao {
